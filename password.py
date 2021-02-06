@@ -5,7 +5,7 @@
 password = 'a123456' 
 x = 3 #可試次數
 
-while True:
+while x > 0:
     pwd = input('請輸入密碼: ')
     if pwd == password:
         print('登入成功!!')
@@ -13,8 +13,7 @@ while True:
     else:
         x = x - 1
         print('輸入錯誤 還有', x, '次機會')
-        if x == 0:
-            print('嘗試次數已達上限')
-            break #stop
+        print('嘗試次數已達上限')
+
  
  
